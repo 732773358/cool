@@ -112,7 +112,7 @@ public class CoolWeatherDB {
 				ContentValues values=new ContentValues();
 				values.put("county_name", county.getCountyName());
 				values.put("county_code", county.getCountyCode());
-				values.put("province_id",county.getProvinceId() );
+				values.put("province_id",county.getCityId() );
 				db.insert("county", null, values);
 		}
 	}
